@@ -1,0 +1,33 @@
+.visitados{
+    background-image: var(--azul-degrade);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+    gap: 0.5em;
+}
+.visitados__titulo {
+    color: var(--branco);
+    font-family: var(--poppins);
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 0.5em;
+}
+.visitados__ancoras {
+    display: flex;
+    gap: 1em;
+    margin: 1em;
+    justify-content: center;
+}
+.visitados__ancora {
+    text-decoration: none;
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-family: var(--poppins);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 16px 24px;  
+    display: flex;
+    align-items: center;
+}
