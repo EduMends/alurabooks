@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./src/styles.css">
 </head>
@@ -36,13 +37,44 @@
                     <a href="#" class="lista-menu__link">DESIGN & UX</a>
                 </li>
             </ul>
-            <img src="src/img/Logo.svg" alt="Logo da Alurabooks" class="cabecalho_imagem">
+            <img src="src/img/Logo.svg" alt="Logo da Alurabooks" class="container_botao">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>Books</h1>
         </div>
+            <ul class="opcoes">
+                <input type="checkbox" id="opcoes__menu" class="opcoes__botao">
+                <label for="opcoes__menu">
+                <li class="opcoes__item">Categorias</li>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">PROGRAMAÇÃO</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">FRONT-END</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">INFRAESTRUTURA</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">BUSINESS</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">DESIGN & UX</a>
+                    </li>
+                </ul>
+                <li class="opcoes__item">
+                    <a href="#" class="opcoes__link">Favoritos</a>
+                </li>
+                <li class="opcoes__item">
+                    <a href="#" class="opcoes__link">Minha Estante</a>
+                </li>  
+            </ul>
         <div class="container">
-            <a href="#"><img src="src/img/Favoritos.svg" alt="Iconce de Favoritos" class="cabecalho_imagem"></a>
+            <a href="#"><img src="src/img/Favoritos.svg" alt="Iconce de Favoritos" class="cabecalho_imagem cabecalho_imagem--favoritos"></a>
             <a href="#"><img src="src/img/Compras.svg" alt="Icone de Sacola" class="cabecalho_imagem"></a>
             <a href="#"><img src="src/img/Usuario.svg" alt="Icone de Usuário" class="cabecalho_imagem"></a>
         </div>
+
     </header>
     <section class="banner">
         <h2 class="banner__titulo">Já sabe por onde começar?</h2>
@@ -126,20 +158,16 @@
     </section>
     <section class="visitados">
         <h2 class="visitados__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
-        <div class="visitados__ancoras">
-            <a class="visitados__ancora" href="#">Android</a> 
-            <a class="visitados__ancora" href="#">Marketing Digital</a>
-            <a class="visitados__ancora" href="#">Agile</a>
-        </div>
-        <div class="visitados__ancoras">
-            <a class="visitados__ancora" href="#">Starups</a>
-            <a class="visitados__ancora" href="#">HTML & CSS</a>
-            <a class="visitados__ancora" href="#">Python</a>
-        </div>
-        <div class="visitados__ancoras">
-            <a class="visitados__ancora" href="#">OO</a>
-            <a class="visitados__ancora" href="#">Java</a>
-        </div>
+        <ul class="visitados__ancoras">
+            <li><a class="visitados__ancora" href="#">Android</a></li> 
+            <li><a class="visitados__ancora" href="#">OO</a></li>
+            <li><a class="visitados__ancora" href="#">Marketing Digital</a></li>
+            <li><a class="visitados__ancora" href="#">Agile</a></li>
+            <li><a class="visitados__ancora" href="#">Starups</a></li>
+            <li><a class="visitados__ancora" href="#">HTML & CSS</a></li>
+            <li><a class="visitados__ancora" href="#">Java</a></li>
+            <li><a class="visitados__ancora" href="#">Python</a></li>
+        </ul>
     </section>
     <section class="novidades">
         <div class="novidades__descricao">

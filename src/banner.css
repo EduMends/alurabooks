@@ -33,5 +33,26 @@
     font-weight: 700;
 }
 
+@media screen and (min-width:1024px) {
+
+.banner__titulo {
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 40px;
+}
+.banner__texto {
+    padding-bottom: 2em;
+}
+.banner__pesquisa::placeholder{
+    font-size: 16px;
+    background: url(../src/img/Pesquisa.svg) no-repeat;
+}
+.banner__pesquisa {
+    width: 43%;
+    height: 56px;
+    padding: 10px 24px;
+    margin-bottom: 40px;
+}
+}
 
 
