@@ -2,7 +2,6 @@
     background-image: var(--azul-degrade);
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 24px 0;
     gap: 0.5em;
 }
@@ -16,6 +15,9 @@
 }
 .visitados__ancoras {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     gap: 1em;
     margin: 1em;
 }
@@ -33,14 +35,22 @@
 
 @media screen and (min-width:1024px) {
 
+.visitados {
+    
+}
+
 .visitados__titulo {
     font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 1em;
 }    
 
 .visitados__ancora {
     font-size: 24px;
     padding: 24px 32px;
-
-    
+     
+}
+.visitados__ancoras {
+    gap: 24px; 
 }
 }
