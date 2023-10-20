@@ -19,6 +19,7 @@
     font-weight: 400;
     font-size: 14px;
     text-align: center;
+    justify-content: center;
     background: url(../src/img/Pesquisa.svg) no-repeat; 
     padding-left: 20px;
     
@@ -53,6 +54,26 @@
     padding: 10px 24px;
     margin-bottom: 40px;
 }
+}
+
+@media screen and (min-width:1728px) {
+    
+.banner__titulo {
+    font-size: 36px;
+    font-weight: 700;
+}
+.banner__texto {
+    font-size: 16px;
+}
+.banner__pesquisa {
+    width: 33%;
+    padding: 0 145px;
+}
+.banner__pesquisa::placeholder{
+    font-size: 16px;
+    background: url(../src/img/search_black_24dp\ 1.svg) no-repeat;  
+    
+} 
 }
 
 
