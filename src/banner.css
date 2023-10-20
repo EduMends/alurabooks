@@ -8,7 +8,7 @@
     background-color: transparent;
     border: 1px solid var(--branco);
     border-radius: 24px;
-    padding: 1em 0em 1em 3em;
+    padding: 10px 24px;
     width: 100%;
     color: var(--branco);  
     text-align: center;
@@ -22,6 +22,7 @@
     justify-content: center;
     background: url(../src/img/Pesquisa.svg) no-repeat; 
     padding-left: 20px;
+    background-position: 0.5em;
     
      
 }
@@ -47,6 +48,7 @@
 .banner__pesquisa::placeholder{
     font-size: 16px;
     background: url(../src/img/Pesquisa.svg) no-repeat;
+    background-position: 2em;
 }
 .banner__pesquisa {
     width: 43%;
@@ -67,11 +69,12 @@
 }
 .banner__pesquisa {
     width: 33%;
-    padding: 0 145px;
+    padding: 10 24px;
 }
 .banner__pesquisa::placeholder{
     font-size: 16px;
     background: url(../src/img/search_black_24dp\ 1.svg) no-repeat;  
+    background-position: 8em;
     
 } 
 }
