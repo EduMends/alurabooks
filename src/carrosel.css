@@ -110,7 +110,45 @@
 }
 }
 
-@media screen and (min-width:1728px) {
+@media screen and (min-width: 1728px) {
     
+    .carrossel__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 15vw 2em 15vw;
+    }
 
+    .swiper-pagination {
+        margin: 0em -3em 15px;
+    }
+
+    .swiper {
+        width: 100%;
+    }
+
+    .swiper-slide img {
+        width: 80%;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        position: absolute;
+        top: 185px;
+        padding-right: 3em;
+    } 
+
+    .cards {
+        margin: 4em 0.5em;   
+    }
+
+    .descricao__texto {
+        font-size: 16px;
+        margin: 0px 2em 0 0em;
+        margin-bottom: 0em;
+        width: 330px;
+    }
+    .descricao__titulo {
+        font-size: 32px; 
+    }
 }

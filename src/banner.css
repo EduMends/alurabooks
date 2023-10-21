@@ -60,23 +60,17 @@
 
 @media screen and (min-width:1728px) {
     
-.banner__titulo {
-    font-size: 36px;
-    font-weight: 700;
-}
-.banner__texto {
-    font-size: 16px;
-}
-.banner__pesquisa {
-    width: 33%;
-    padding: 10 24px;
-}
-.banner__pesquisa::placeholder{
-    font-size: 16px;
-    background: url(../src/img/search_black_24dp\ 1.svg) no-repeat;  
-    background-position: 8em;
-    
-} 
-}
+    .banner__texto {
+        font-weight: 500;
+    }
 
+    .banner__pesquisa {
+        width: 33%;
+    }
 
+    .banner__pesquisa::placeholder {
+        background-position: 6em;
+        font-weight: 400;
+    }
+
+}
