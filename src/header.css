@@ -6,6 +6,19 @@
     background-position: center;
     display: inline-block;
 }
+
+.container__botao:checked~ .cabecalho__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url(./img/Menu\ Aberto.svg);
+}
+
+.container__botao:checked~ .cabecalho__rotulo:hover {
+    background: var(--azul-degrade);
+}
+
+.cabecalho__rotulo {
+    padding: 0.5em;
+}
+
 .cabecalho {
     background-color: var(--branco);
     font-family: var(--poppins);
@@ -13,10 +26,10 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 0 0.5em;
+    
 }
 .cabecalho__imagem {
-    padding: 1.5em 1em;
+    padding: 1em 0.5em;
 }
 .container__botao:checked~ .lista-menu {
     display: block;
@@ -29,7 +42,7 @@
 .container__botao {
     display: none;
 }
-.cabecalho_imagem {
+.cabecalho__menu--imagem {
     padding: 1em;
 }
 .lista-menu {
@@ -74,13 +87,19 @@
 @media screen and (min-width:1024px) {
 
 .cabecalho {
-    padding: 10px 10px;
+    padding: 0px 10px;
+    justify-content: space-around;
 }    
 .cabecalho__menu-hamburguer {
     display: none;
 }
 .cabecalho_imagem--favoritos {
     display: none;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 45px;
 }
     
 .container__titulo {
@@ -102,14 +121,29 @@
     display:flex;
     text-transform: uppercase;
     font-weight: 400;
+    margin-right: 2em;
 }
+
+.opcoes__botao:checked~ .opcoes__rotulo> .opcoes__item {
+    background: var(--azul-degrade);
+    color: var(--branco);   
+}
+
+.lista-menu__item:hover {
+    background: var(--azul-degrade);
+}
+
+.lista-menu__item:hover > .lista-menu__link {
+    -webkit-text-fill-color: var(--branco)
+}
+
 .opcoes__item {
     font-family: var(--poppins);
     color: var(--preto);
-    font-weight: 400;
-    padding: 0 2em;
-    margin-right: 0.5em;
+    font-weight: 400; 
+    padding: 2em 1em;
 }
+
 .opcoes__link {
     text-decoration: none;
     color: var(--preto);
@@ -123,20 +157,13 @@
 .opcoes__botao {
     display: none;
 }
-.cabecalho__imagem {
-    padding: 0 1em;
-}
 
 .cabecalho__texto {
-    display: block;
+    display: none;
 }
 
-.cabecalho__menu--link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--preto);
-    padding-left: 2em;
+.container__botao {
+    display: none;   
 }
 
 }
@@ -148,14 +175,20 @@
         align-items: center;
         text-decoration: none;
         color: var(--preto);
-        padding-left: 2em;
+    }
+    .cabecalho__menu--imagem {
+        padding-left:  0.5em;
     }
 
     .cabecalho {
-         padding: 1em 3em;
+        padding: 0 20px;
     }
 
     .opcoes {
         margin-right: auto;
+    }
+
+    .cabecalho__texto {
+        display: block;
     }
 }
